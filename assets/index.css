@@ -1,54 +1,87 @@
-.section {
-  width: 100%;
-}
-.section .title {
-  color: teal;
-}
-.section .text {
-  font-size: 14px;
-}
-
-.button {
-  background: teal;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.button:hover, .button:focus {
-  color: blue;
-}
-
-.button-icon {
-  width: 20px;
-  height: 20px;
-}
-.button-icon:hover {
-  width: 50px;
-  height: 50px;
-}
-.button:hover .button-icon {
-  font-size: 20px;
-}
-
-.button-label {
-  font-size: 16px;
-}
-.button:hover .button-label {
-  font-size: 20px;
-}
-
-/**
-  |============================
-  | Using combinators in SASS
+@charset "UTF-8";
+/*|============================
+  | Додавання & Віднімання
   |============================
 */
-ul > li {
-  list-style: none;
+.box {
+  width: 630px;
+  width: 570px;
 }
 
-h2 + p {
-  border-top: 1px solid gray;
+/*|============================
+    | Множення & Ділення
+    |============================
+  */
+.box {
+  width: 3000px;
+  width: 1250px;
+  width: 1300px;
+  width: 120px;
+  width: 300px;
+  width: 300px;
 }
 
-p ~ span {
-  opacity: 0.8;
+/*|============================
+    | Інтерполяція
+    |============================
+  */
+.box {
+  width: 200px;
+}
+
+.box {
+  width: 200px;
+  width: -webkit-calc(100px * 2);
+  width: -moz-calc(100px * 2);
+  width: calc(100px * 2);
+}
+
+.badge-info {
+  color: #b5b5be;
+  font-size: 14px;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.5px;
+  text-align: right;
+}
+
+.badge {
+  min-width: 96px;
+  padding: 4px 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.07px;
+  border-radius: 20px;
+  background-color: #92929d;
+}
+
+.badge-completed {
+  background-color: #a461d8;
+}
+
+.badge-ended {
+  background-color: #fc5a5a;
+}
+
+.badge-active {
+  background-color: #82c43c;
+}
+
+/*|============================
+  | Створити класи для бейджів
+  |============================
+*/
+.badge-completed {
+  background-color: #a461d8;
+}
+
+.badge-ended {
+  background-color: #fc5a5a;
+}
+
+.badge-active {
+  background-color: #82c43c;
 }
