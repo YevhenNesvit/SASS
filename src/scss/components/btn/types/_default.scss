@@ -1,4 +1,4 @@
-@if index($button-types, primary) {
+@if index($button-types, default) {
   /* == Default == */
   .btn--default {
     background-color: #92929d;

@@ -1,4 +1,4 @@
-@if index($button-types, primary) {
+@if index($button-types, warning) {
   /* == Warning == */
   .btn--warning {
     background-color: #a461d8;

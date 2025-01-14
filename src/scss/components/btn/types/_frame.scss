@@ -1,4 +1,4 @@
-@if index($button-types, primary) {
+@if index($button-types, frame) {
   /* == Frame == */
   .btn--frame {
     border-color: #f07f2e;
